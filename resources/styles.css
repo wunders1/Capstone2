@@ -188,14 +188,15 @@ main {
   height: auto;
 }
 
-.article-main h2 {
+.article-main h3 {
   font-size: 2.2rem;
   font-weight: 900;
+  margin-bottom: 0px;
 
 }
 
 .article-main .quote {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-top: 24px;
   padding-bottom: 24px;
 }
