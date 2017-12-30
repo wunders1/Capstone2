@@ -159,8 +159,8 @@ main {
   display: flex;
   width: 100%;
   height: auto;
-  margin: 32px 0px;
   padding-bottom: 32px;
+  margin: auto;
 }
 
 .article-main {
@@ -168,36 +168,188 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 24px;
+  margin: 32px 24px;
+  height: auto;
 }
 
 .article-main .image {
   background-image: url(images/information-main.jpg);
   width: 100%;
-  margin-right: 24px;
+  height: auto;
   background-size: cover;
   background-position: top;
+  overflow: hidden;
 }
 
 .article-main .text {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 .article-main h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 900;
+
 }
 
 .article-main .quote {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 
 .article-main .ref {
 
 }
+
+.info {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height:auto;
+}
+.info .article .article-img {
+  width: 35%;
+}
+
+
+.article-img img {
+  width: 100%;
+  height:auto;
+  padding: 16px;
+}
+
+.info-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-left: 32px;
+}
+
+.info-text h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0px;
+}
+
+.info-text a {
+  padding: 8px 0px;
+}
+
+
+#guest {
+  background-color: #86c3ef;
+}
+
+.read-more {
+  width: 40%;
+  background-color: #002e4f;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  margin: 16px 24px;
+
+  /*css transition - background and font color*/
+  -webkit-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+  -moz-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+  -ms-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+  -o-transition: background-color 1s ease-in-out, 500ms ease-in-out;
+  transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+}
+
+.read-more:hover {
+  background-color: #c77be5;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 2px 10px 1px #002e4f;
+}
+
+
+
+/* Courses */
+
+.all-courses {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 32px 0px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #86c3ef;
+}
+
+.all-courses h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  align-items: center;
+}
+
+.courses {
+  display: flex;
+  align-content: space-around;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 72px 32px 72px;
+
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: auto;
+  width: 30%;
+}
+
+.class img {
+  width: 100%;
+  height:auto;
+
+}
+
+.class h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 16px 16px;
+}
+
+.class h4 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 8px 16px;
+}
+
+.class a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0px 16px 24px 16px;
+  transition: all 1s ease-out;
+
+}
+.class:hover {
+	/*css transition - article scale*/
+	-moz-transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+	-o-transform: scale(0.9, 0.9);
+	-ms-transform: scale(0.9, 0.9);
+	transform: scale(0.9, 0.9);
+  transition-delay: 200ms;
+}
+
+
+/* Thesis Section */
 
 
 
