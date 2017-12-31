@@ -19,6 +19,7 @@ html {
 
 body {
   width: 100%;
+  margin: 0px;
 }
 
 
@@ -33,6 +34,7 @@ header {
   justify-content: space-between;
   top: 0;
   position: fixed;
+  z-index: 500;
 }
 
 .logo img, .logo h1 {
@@ -210,6 +212,7 @@ main {
   height: auto;
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
 }
 
 .article {
@@ -347,15 +350,104 @@ main {
 	-ms-transform: scale(0.9, 0.9);
 	transform: scale(0.9, 0.9);
   transition-delay: 200ms;
+
 }
 
 
 /* Thesis Section */
 
+.thesis {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
 
+}
 
+.thesis h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 0px;
+}
 
-/*Media Queries*/
+.thesis .content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.thesis .media-article {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  margin: 0px 24px;
+  overflow: hidden;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.media-article .text {
+  margin-top: 24px;
+}
+
+.media-article h3 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  padding-bottom: 8px;
+  margin: 0px;
+}
+
+.media-article a {
+  font-size: 1.3rem;
+}
+
+.exhibit-articles {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+#fisma {
+  background-color: #86c3ef;
+}
+
+.exhibit-articles img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 32px;
+  border-top: 2px solid #002e4f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  margin-left: 24px;
+}
+
+footer nav {
+  align-self: flex-end;
+}
+
+/* Media Queries */
 
 /*Desktop*/
 @media only screen and (min-width: 951px) {
