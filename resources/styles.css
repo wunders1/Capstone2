@@ -456,3 +456,72 @@ footer nav {
 		display: none;
 	}
 }
+
+/* Tablet 950px > Screen < 741px  */
+@media only screen and (min-width: 741px) and (max-width: 950px) {
+  /* Header */
+	.logo .mobile-svg {
+		display: none;
+	}
+
+  /* Banner */
+  .banner-text p {
+    display: none;
+  }
+  .banner-text a {
+    width: 50%;
+    transition: none;
+  }
+
+
+  /* Events */
+  .Events h3 {
+    margin-top: 0px;
+    padding-top: 8px;
+  }
+  .Events .quote {
+    font-size: 1rem;
+  }
+  .info-text .blerb {
+    display: none;
+  }
+  .read-more {
+    width: 50%;
+    transition: none;
+  }
+
+  /* Start Learning Section (Courses/All-Courses) */
+  .class h4, .class a {
+    display: none;
+  }
+  .class h3 {
+    text-align: center;
+  }
+
+  /* Thesis */
+  .media-article .text a {
+    font-size: 1rem;
+  }
+  .exhibit-articles a {
+    display: none;
+  }
+  .exhibit-articles h2 {
+    font-size: 1.5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
