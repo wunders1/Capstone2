@@ -14,12 +14,13 @@ html {
   font-size: 16px;
   font-family: 'Raleway', Garamond;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 body {
   width: 100%;
   margin: 0px;
+  padding: 0px;
 }
 
 
@@ -70,18 +71,23 @@ nav {
 nav ul li {
 	display: inline-block;
 	font-size: 1.2rem;
-		color: #86c3ef;
+	color: #86c3ef;
 }
 
-nav ul li:nth-child(1n+2) {
+nav li:nth-child(1n+2) {
 	padding-left: 16px;
+}
+
+ul {
+  padding; 0px;
 }
 
 /* Banner  */
 
 main {
-
+  width: 100%;
 }
+
 .banner {
   display: flex;
   width: 100%;
@@ -407,7 +413,7 @@ video {
   margin: 0px;
 }
 
-.media-article a {
+.article .text a {
   font-size: 1.3rem;
 }
 
@@ -447,15 +453,25 @@ footer nav {
   align-self: flex-end;
 }
 
+
 /* Media Queries */
 
-/*Desktop*/
+/* Desktop */
 @media only screen and (min-width: 951px) {
 	/*Header*/
 	.logo .mobile-svg {
 		display: none;
 	}
+  .banner .container img {
+    display: none;
+  }
+
+  /* Events */
+  .Events .mobile-svg {
+    display: none;
+  }
 }
+
 
 /* Tablet 950px > Screen < 741px  */
 @media only screen and (min-width: 741px) and (max-width: 950px) {
@@ -471,6 +487,9 @@ footer nav {
   .banner-text a {
     width: 50%;
     transition: none;
+  }
+  .banner .container img {
+    display: none;
   }
 
 
@@ -488,6 +507,9 @@ footer nav {
   .read-more {
     width: 50%;
     transition: none;
+  }
+  .Events .mobile-svg {
+    display: none;
   }
 
   /* Start Learning Section (Courses/All-Courses) */
@@ -509,19 +531,95 @@ footer nav {
     font-size: 1.5rem;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+/* Mobile Screen < 741px  */
+@media only screen and (max-width: 740px) {
+
+/* Header */
+header nav, .logo h1 {
+  display: none;
+}
+.logo {
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 10px;
+  height: 64px;
+}
+
+/* Banner */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.banner-text {
+  margin: 0;
+  width: 100%;
+}
+.banner .container .image {
+  display: none;
+}
+.banner .container img {
+  width: 100%;
+  height: auto;
+}
+.banner .container h2 {
+  font-size: 2.5rem;
+  margin: 32px 16px;
+  padding: 0;
+}
+.banner .container p {
+  font-size: 1.75rem;
+  margin: 24px 16px;
+  padding: 0;
+}
+.banner .container a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 90%;
+  height: 32px;
+  margin: 0px 24px 32px 24px;
+  transition: none;
+}
+
+/* Event */
+
+.Events .article-main {
+  display: none;
+}
+.Events .article {
+  display: flex;
+  flex-direction: column;
+}
+.Events .info {
+  width: 100%;
+}
+.info .article .article-img {
+  width: 100%;
+  margin: 16px;
+}
+
+
+
+
+#oday .large {
+  display: none;
+}
+#Our .large {
+  display: none;
+}
+#guest .large {
+  display: none;
+}
+
+
+
+
+
+
+
+
+  }
