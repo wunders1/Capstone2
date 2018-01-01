@@ -10,18 +10,14 @@ light purple  #c77be5
 */
 
 /* Global */
-html {
+html, body {
   font-size: 16px;
   font-family: 'Raleway', Garamond;
   width: 100%;
   height: auto;
-}
-
-body {
-  width: 100%;
   margin: 0px;
   padding: 0px;
-}
+  }
 
 
 /* Header */
@@ -90,18 +86,10 @@ main {
 
 .banner {
   display: flex;
-  width: 100%;
   height: auto;
   margin-top: 64px;
   background-color: #86c3ef;
   align-items: center;
-
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .banner .image {
@@ -111,7 +99,6 @@ main {
   background-size: cover;
   background-position: top;
 }
-
 
 .banner-text {
     width: 40%;
@@ -165,7 +152,6 @@ main {
 
 .Events {
   display: flex;
-  width: 100%;
   height: auto;
   padding-bottom: 32px;
   margin: auto;
@@ -178,6 +164,12 @@ main {
   align-items: center;
   margin: 32px 24px;
   height: auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .article-main .image {
@@ -200,17 +192,12 @@ main {
   font-size: 2.2rem;
   font-weight: 900;
   margin-bottom: 0px;
-
 }
 
 .article-main .quote {
   font-size: 1.3rem;
   padding-top: 24px;
   padding-bottom: 24px;
-}
-
-.article-main .ref {
-
 }
 
 .info {
@@ -227,10 +214,10 @@ main {
   align-items: center;
   height:auto;
 }
+
 .info .article .article-img {
   width: 35%;
 }
-
 
 .article-img img {
   width: 100%;
@@ -243,19 +230,19 @@ main {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding-left: 32px;
+  padding-left: 56px;
 }
 
 .info-text h3 {
-  font-size: 1.3rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin: 0px;
 }
 
 .info-text a {
+  font-size: 1.2rem;
   padding: 8px 0px;
 }
-
 
 #guest {
   background-color: #86c3ef;
@@ -268,7 +255,7 @@ main {
   text-align: center;
   text-decoration: none;
   padding: 8px;
-  margin: 16px 24px;
+  margin: 16px 0px;
 
   /*css transition - background and font color*/
   -webkit-transition: background-color 1s ease-in-out, color 500ms ease-in-out;
@@ -311,7 +298,7 @@ main {
   flex-flow: wrap;
   justify-content: center;
   width: 100%;
-  padding: 0px 72px 32px 72px;
+  margin: 0px 72px 32px 72px;
 
 }
 
@@ -473,7 +460,7 @@ footer nav {
 }
 
 
-/* Tablet 950px > Screen < 741px  */
+/* Tablet 950px > Screen > 741px  */
 @media only screen and (min-width: 741px) and (max-width: 950px) {
   /* Header */
 	.logo .mobile-svg {
@@ -497,6 +484,7 @@ footer nav {
   .Events h3 {
     margin-top: 0px;
     padding-top: 8px;
+    font-size: 1.5rem;
   }
   .Events .quote {
     font-size: 1rem;
@@ -534,7 +522,7 @@ footer nav {
 }
 
 
-/* Mobile Screen < 741px  */
+/* Mobile Screen < 740px  */
 @media only screen and (max-width: 740px) {
 
 /* Header */
@@ -547,7 +535,6 @@ header nav, .logo h1 {
   padding-top: 10px;
   height: 64px;
 }
-
 /* Banner */
 .container {
   display: flex;
@@ -572,7 +559,7 @@ header nav, .logo h1 {
   padding: 0;
 }
 .banner .container p {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   margin: 24px 16px;
   padding: 0;
 }
@@ -584,27 +571,36 @@ header nav, .logo h1 {
   margin: 0px 24px 32px 24px;
   transition: none;
 }
-
 /* Event */
-
+.Events {
+  padding: 0;
+}
 .Events .article-main {
   display: none;
 }
 .Events .article {
   display: flex;
   flex-direction: column;
+  margin: 16px;
 }
 .Events .info {
   width: 100%;
 }
 .info .article .article-img {
   width: 100%;
-  margin: 16px;
+  display: flex;
 }
+.article-img img {
+  display: flex;
+  
+  padding: 0;
 
-
-
-
+}
+.info-text {
+  width: 100%;
+  margin: 32px 0px 0px 32px;
+  padding: 0;
+}
 #oday .large {
   display: none;
 }
@@ -614,12 +610,59 @@ header nav, .logo h1 {
 #guest .large {
   display: none;
 }
+#guest {
+  background-color: #fff;
+}
+/* Start Learning (Courses) */
+.all-courses img, .all-courses a, .all-courses h4 {
+  display: none;
+}
+.all-courses {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.courses {
+  width: 100%;
+  margin: 0;
+}
+.class {
+  width: 100%;
+  padding: 0;
+  margin: 8px;
+  background-color: #86c3ef;
+  padding: 16px 0px 24px 16px;
+  transition: hidden;
+}
+.all-courses h2 {
+  width: 100%;
+  text-align: center;
+  margin: 16px 0px;
+}
+/* Thesis */
+.thesis {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+.thesis .exhibit-articles {
+  display: none;
+}
+.thesis .media-article {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.media-article .text {
+  display: none;
+}
+/* Footer */
+footer nav {
+  display: none;
 
-
-
-
-
-
-
-
-  }
+}
+footer {
+  border-top: none;
+  margin-top: 16px;
+  padding: 16px 0px;
+}
+}
